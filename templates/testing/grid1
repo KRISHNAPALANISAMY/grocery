@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* MAIN GRID (4 rows, auto columns) */
+.container {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);   /* always 4 rows */
+    grid-auto-flow: column;               /* fill top → bottom → next column */
+    grid-auto-columns: 200px;             /* each column 200px */
+    gap: 10px;
+    height: 100vh;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* BOX STYLE */
+.box {
+    background: #cfe0ff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* SIMPLE SPANS */
+.wide { grid-row: span 2; }
+.tall { grid-row: span 2; }
+.big  { grid-column: span 2; grid-row: span 4; }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="box wide">1</div>
+    <div class="box tall">2</div>
+    <div class="box big">6</div>
+</div>
+
+</body>
+</html>

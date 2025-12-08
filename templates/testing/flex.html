@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+/* not perfect */
+        .container{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .para1{
+            background-color:green;
+            flex:1;
+        }
+        .container11{
+            display:flex;
+            background-color:crimson;
+            align-items:center;
+            justify-content:space-between;
+        }
+/* not perfect */
+
+
+        p{
+           
+            color: white;
+            padding: 10px;
+            font-family:Helvetica;
+        }
+        button{
+            border-radius:10%;
+            font-size:15px;
+            background-color:white;
+            color:black;
+            margin:4px;
+        }
+
+        /* navbar */
+
+        .navcontainer{
+            display:flex;
+            background-color:crimson;
+            justify-content:space-between;
+            align-items:center;
+            
+        }
+        .rightcontainer{
+            display:flex;
+            align-items:center;
+        }
+        .logo1{
+           font-family:Helvetica;
+           font-size:20px;
+           margin:10px;
+        }
+        .block{
+            display:flex;
+            
+        }
+    </style>
+</head>
+<body>
+<!-- correct code -->
+
+<nav class="navcontainer">
+    <div class="logo1">
+        <h1>logo</h1>
+    </div>
+    <div class="rightcontainer">
+        <p>Home</p>
+        <p>About</p>
+        <p>Contact</p>
+        <button>Signup</button>
+        <button>Login</button>
+    </div>
+</nav>
+
+
+<!-- correct code -->
+<hr>
+
+    <nav>
+      <div class="container">
+        <div class="para1"><p>container</p></div>
+   
+    <div class="container">
+        <div class="para1"><p>container</p></div>
+        <div class="para1"><p>container</p></div>
+        <div class="para1"><p>container</p></div> 
+        <!-- <div class="para1"><p>container</p></div>
+        <div class="para1"><p>container</p></div>
+        <div class="para1"><p>container</p></div>
+        <div class="para1"><p>container</p></div> -->
+    </div>
+    
+</nav>
+<hr>
+<nav class="container11">
+  <div class="logo">
+    <h1>logo</h1>
+  </div>
+  <div class="container">
+    <p>Home</p>
+    <div><p>About</p></div>
+    <p>Contact</p>
+    <button>signup</button>
+    <button>signup</button>
+  </div>
+</nav>
+<hr>
+<div class="block">
+<div class="b">
+
+</div>
+<div class="b">
+    
+</div>
+<div class="b">
+    
+</div>
+<div class="b">
+    
+</div>
+</div>
+
+
+</body>
+</html>

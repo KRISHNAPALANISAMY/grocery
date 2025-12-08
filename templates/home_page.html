@@ -4,18 +4,103 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>home</title>
-  <link rel="stylesheet" href="/static/styles.css">
+  <style>
+        p{
+           
+            color: white;
+            padding: 10px;
+            font-family:Helvetica;
+        }
+        button{
+            border-radius:10%;
+            font-size:15px;
+            background-color:white;
+            color:black;
+            margin:4px;
+        }
+
+        /* navbar */
+
+        .navcontainer{
+            display:flex;
+            background-color:crimson;
+            justify-content:space-between;
+            align-items:center;
+            
+        }
+        .rightcontainer{
+            display:flex;
+            align-items:center;
+        }
+        .logo1{
+           font-family:Helvetica;
+           font-size:20px;
+           margin:10px;
+        }
+        .fruit img{
+          height: 100px;
+          width:100px
+        }
+        
+</style>
+<link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
   <header>
+    <nav class="navcontainer">
+    <div class="logo1">
+        <h1>logo</h1>
+    </div>
+    <div class="rightcontainer">
+        <p>Home</p>
+        <p>About</p>
+        <p>Contact</p>
+        <button>Signup</button>
+        <button>Login</button>
+    </div>
+</nav>
 
+
+<!-- correct code -->
   </header>
   <div class="container2">
     <!-- whole container -->
     <div class="container1">
       <!-- inner container -->
-      <div class="item1">
-        <h4 align="center">item1</h4>
+      <div class="fruitbox">
+        <h1 align="center">Fruits</h1>
+      <div class=" fruit">
+      <img src="/static/assets/fruits/apple.jpg">
+      <p>Apple</p>
+      </div>
+      <div class=" fruit">
+      <img src="/static/assets/fruits/orange.jpg">
+      <p>Apple</p>
+      </div> 
+      <div class=" fruit">
+      <img src="/static/assets/fruits/jackfruit.jpg">
+      <p>Apple</p>
+      </div>
+      <div class=" fruit">
+        <img src="/static/assets/fruits/avacado.jpg">
+      <p>Apple</p>
+      </div> 
+      <div class=" fruit">
+      <img src="/static/assets/fruits/grapes.jpg">
+      <p>Apple</p>
+      </div> 
+      <div class=" fruit">
+      <img src="/static/assets/fruits/plum.jpg">
+      <p>Apple</p>
+      </div> 
+      <div class=" fruit">
+      <img src="/static/assets/fruits/blueberry.jpg">
+      <p>Apple</p>
+      </div> 
+      <div class=" fruit">
+      <img src="/static/assets/fruits/mango.jpg">
+      <p>Apple</p>
+      </div> 
         
       </div>
       <div class="item2">
