@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies List</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Main container */
+        .movie-container {
+            border: 3px solid #333;
+            padding: 20px;
+            width: 400px;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        /* Title */
+        .movie-container h2 {
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        /* Grid for movies */
+        .movies-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 15px;
+        }
+
+        /* Movie box */
+        .movie {
+            border: 2px solid #555;
+            padding: 15px;
+            background-color: #4caf50;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="movie-container">
+        <h2 id="main-title">🎬 Movies List</h2>
+
+        <div class="movies-grid">
+            <div class="movie">Inception</div>
+            <div class="movie">Interstellar</div>
+            <div class="movie">Avatar</div>
+            <div class="movie">Titanic</div>
+            <div class="movie">Joker</div>
+        </div>
+    </div>
+    <script src="dom1.js"></script>
+</body>
+</html>
