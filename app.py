@@ -1,6 +1,8 @@
-from flask import Flask,render_template
-app=Flask(__name__)
-
-@app.route("/")
-def login():
-    return render_template("login_page.html")
+from fastapi import FastAPI
+app = FastAPI()
+@app.get("/")
+def read_root():
+    return "hello"
+@app.get("/product")
+def read_product():
+    return {"message":"product"}
