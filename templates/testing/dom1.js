@@ -17,7 +17,8 @@ console.log(listItems);
 const ul = document.querySelector('ul');
 
 const li = document.createElement('li');
-li.textContent = "New Item";   // add content
+
+li.textContent = "NewItem";   // add content
 ul.append(li);
 
 console.log(li);              // log the element
