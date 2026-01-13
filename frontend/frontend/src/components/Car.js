@@ -1,5 +1,4 @@
 import React from 'react';
-
 class Car extends React.Component{
     render(){
         return(
@@ -7,5 +6,4 @@ class Car extends React.Component{
         )
     }
 }
-
 export default Car;
