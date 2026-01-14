@@ -6,4 +6,5 @@ class Car extends React.Component{
         )
     }
 }
+
 export default Car;
