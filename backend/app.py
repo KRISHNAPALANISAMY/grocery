@@ -11,7 +11,6 @@ def get_db():
         yield db
     finally:
         db.close()
-        
 @app.post("/",response_model=TodoSchema)
 def create(todo:TodoCreate, db:Session = Depends(get_db)):
     db_todo = Todo(**todo.dict())
