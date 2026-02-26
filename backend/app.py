@@ -1,5 +1,5 @@
 from fastapi import FastAPI,Depends,HTTPException
-from sqlalchemy.orm import Session
+from sqlalchemy.orm imPport Session
 from schema import Todo as TodoSchema,TodoCreate
 from database import sessionLocal,Base,engine
 from models import Todo
@@ -18,6 +18,7 @@ def create(todo:TodoCreate, db:Session = Depends(get_db)):
     db.commit()
     db.refresh(db_todo)
     return db_todo
+
 #read
 @app.get("/todos",response_model=list[TodoSchema])
 def read_todos(db:Session = Depends(get_db)):
